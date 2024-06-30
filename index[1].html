@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <title>Semangat KKN!</title>
+  </head>
+
+  <body>
+    <button onclick="munculinAlert()" class="heart-button">
+      <img src="elda.jpg" />
+      <p>Click Here</p>
+    </button>
+
+    <script>
+      async function munculinAlert() {
+        // | --- Greeting and Encouragement --- |
+        await Swal.fire("-Syalom ELDAAAAAAaAAAA GARUTTTTTTTT-");
+        await Swal.fire("Zaman sekarang masi KKN?");
+        await Swal.fire("Baguslah Lanjutkan 💪");
+        await Swal.fire("tetap menyerah!");
+        await Swal.fire("jangan semangatttt");
+        await Swal.fire("Tapi boonkkkkkk!");
+        await Swal.fire("semangat terus ya ellll.");
+        await Swal.fire("Jangan lupa untuk selalu tersenyum dan menikmati setiap momennya!");
+        await Swal.fire("Jangan lupa gereja hari sabtu!!");
+        await Swal.fire({
+          title: "Kalau bisa jangan pindah agama apalagi cinlok di sana...",
+          text: "---🥲🥲🥲---.",
+          imageUrl: "dilan.jpeg",
+          imageWidth: 250,
+          imageHeight: 370
+        });
+        await Swal.fire("Dah itu aja dulu, abis ini ada video orang mahal");
+        
+
+        // Closing with Video
+        await Swal.fire({
+          title: "Enjoy the Video!",
+          html: `
+            <video controls style="width: 100%; max-width: 500px;">
+              <source src="WIN.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          `,
+          showCloseButton: true,
+          focusConfirm: false,
+        });
+      }
+    </script>
+  </body>
+</html>
